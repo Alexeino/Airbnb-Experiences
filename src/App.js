@@ -56,11 +56,13 @@ function App() {
             cards.map((card)=>{
                 return(
                     <Card key={card.id}
-                      image = {card.image}
-                      rating = {card.rating}
-                      sales = {card.sales}
-                      country = {card.country}
-                      quote = {card.quote}
+                      // image = {card.image}
+                      // rating = {card.rating}
+                      // sales = {card.sales}
+                      // country = {card.country}
+                      // quote = {card.quote}
+                      // OR
+                      {...card}
                     />
 
                 )              
