@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+  margin:0;
+}
+
+body ::-webkit-scrollbar{
+  width: 12px;
+  color: #e5e5e5;
+}
+
+
+.container{
+  width: 550px;
+  height: 680px;
+  background-color:#fff;
+  top:1%;
+  position: absolute;
+  left:30%;
+  border-radius: 10px;
+
+
+}
+.App{
+  background: #e5e5e5;
+  height: 100vh;
+}
+/* Navbar */
+.nav-container{
+  display: flex;
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+/* Main */
+.grid-img{
+  width:65%;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+/* Animating Grid Image */
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }  
+}
+.main-container{
+  width:100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+.text{
+  width: 100%;
+  text-align: left;
+  padding: 0 2rem;
+  margin-top: 1.2rem;
+}
+.text h1{
+  font-weight: bold;
+}
+.text p{
+  width: 55%;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+/* Carousel // Card */
+.carousel{
+  margin-top: 1rem;
+  margin-left:1rem;
+  /* background-color: #e5e5e5; */
+  height: 255px;
+  display: flex;
+  overflow-x: scroll;
+
+}
+.card-container{
+  height: 225px;
+  display:flex;
+  flex-direction: column;
+  width: 134px;
+  margin-right: 1rem;
+}
+.card-img {
+  height:80%;
+  
+}
+.card-img img{
+  height: 180px;
+  width: 134px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-stats{
+  width:100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.star{
+  height: 13px;
+}
+.card-stats span{
+  font-size: 13px;
+  margin-right: 5px;
+}
+.card-container p{
+  font-size: 12px;
+  line-height: 13px;
+}
